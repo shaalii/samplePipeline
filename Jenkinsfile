@@ -55,6 +55,13 @@ pipeline {
 		}
 
 	} 
+	stage('Runner Execution'){
+		steps{
+			exec javac Runner.java
+			exec java Runner
+		}
+		
+	}
 	stage('Generate Cucumber report') {
             steps{
                  cucumber buildStatus: 'UNSTABLE',
