@@ -46,12 +46,9 @@ pipeline {
 
 		steps{
 
-			bat label: '', script: '''mvn sonar:sonar\
-
-			-Dsonar.host.url=http://localhost:9000\
-
+			bat label: '', script: '''mvn sonar:sonar \
+			-Dsonar.host.url=http://localhost:9000 \
 			-Dsonar.login=squ_1450272800ed853bfab8d665b2ce6e9742eafade'''
-
 		}
 
    	} 
