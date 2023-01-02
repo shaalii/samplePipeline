@@ -31,6 +31,16 @@ pipeline {
        }
 
    	}
+   	
+   	stage('Jacoco Coverage Report') {
+
+        steps{
+
+            jacoco()
+
+		}
+
+	}
 
  
 
